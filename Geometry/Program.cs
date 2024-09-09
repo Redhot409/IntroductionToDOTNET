@@ -128,7 +128,7 @@ namespace Geometry
                     {
                         for (int jk = 0; jk < square_size; jk++)
                         { 
-                            if(i%2==0 &&j%2==0 ||i%2==1 &&j%2==1) Console.Write("* ");
+                            if(i%2==0 &&j%2==0 ||i%2==1 && j%2==1) Console.Write("* ");
                             else Console.Write("  ");
                         }
                     }
