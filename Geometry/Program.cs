@@ -136,6 +136,38 @@ namespace Geometry
                 }
                 Console.WriteLine();
             }
+
+            #region rombus_1
+            Console.Write("Введите размер фигуры: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = i; j < n; j++) Console.Write(" "); Console.Write("/");
+                for (int j = 0; j < i; j++) Console.Write("  "); Console.Write("\\");
+                Console.WriteLine();
+            }
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j <= i; j++) Console.Write(" "); Console.Write("\\");
+                for (int j = i; j < n - 1; j++) Console.Write("  "); Console.Write("/");
+                Console.WriteLine();
+            } 
+            #endregion
+
+           //rombus_2
+            for (int i = 0; i < size * 2; i++)
+            {
+                for (int j = 0; j < size * 2; j++)
+                { 
+                    if(i<size && i==j-size || i>=size && j==i-size) Console.Write("\\");
+                    else if(i==size-1-j || i-size==size*2-1-j) Console.Write("/");
+                    else Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+                
+                
+
         }
     }
 }
