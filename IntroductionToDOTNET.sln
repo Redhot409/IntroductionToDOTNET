@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geomet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{41AD46C5-DF65-469E-B976-64CBBB47FF7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{B58C8BBF-158C-40B3-826A-49D4022DF6C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple_calculator", "Simple_calculator\Simple_calculator.csproj", "{A6B70297-5150-46E7-99BB-9FF1F02C23AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{41AD46C5-DF65-469E-B976-64CBBB47FF7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41AD46C5-DF65-469E-B976-64CBBB47FF7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41AD46C5-DF65-469E-B976-64CBBB47FF7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58C8BBF-158C-40B3-826A-49D4022DF6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58C8BBF-158C-40B3-826A-49D4022DF6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58C8BBF-158C-40B3-826A-49D4022DF6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58C8BBF-158C-40B3-826A-49D4022DF6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B70297-5150-46E7-99BB-9FF1F02C23AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B70297-5150-46E7-99BB-9FF1F02C23AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B70297-5150-46E7-99BB-9FF1F02C23AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B70297-5150-46E7-99BB-9FF1F02C23AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
