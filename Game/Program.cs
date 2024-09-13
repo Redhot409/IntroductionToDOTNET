@@ -13,21 +13,55 @@ namespace Game
     {
         static void Main(string[] args)
         {
-        //    ConsoleKey key;
-        //    do
-        //    {
-        //        key = Console.ReadKey(true).Key;
-        //        //Console.WriteLine(key);
-        //        Console.WriteLine(key.ToString());
-        //    } while (key!=ConsoleKey.Escape);
+            Console.BufferWidth = Console.WindowWidth;
+            Console.BufferHeight = Console.WindowHeight;
+            Console.CursorVisible = false;
 
-            Console.SetWindowSize(60, 60);
-            Console.SetBufferSize(100, 100);
-            Console.SetCursorPosition(20, 20);
-            Console.WriteLine("Привет!");
-            Console.Write("Нажмите любую клавишу...");
+            //генерация случайного числа
+           // 1) создаем объект класса рандом:
+            Random rand =new Random();
 
-            Console.ReadKey(true);
+            // 2) метод next возвращает случайное число типа int
+            int x = rand.Next(Console.BufferWidth);
+            int y = rand.Next(Console.BufferHeight);
+            Console.WriteLine($"X={x}, Y={y}");
+            Console.SetCursorPosition(x, y);
+            char symbol = (char)2;
+            Console.WriteLine(symbol);
+            //Console.WriteLine((char)2);
+            ConsoleKey key;
+            do
+            {
+                key = Console.ReadKey(true).Key;
+                //Console.WriteLine(key);
+                //Console.WriteLine(key.ToString());
+                switch (key)
+                {
+                    case ConsoleKey.UpArrow:
+                    case ConsoleKey.W: y--;break;
+                    case ConsoleKey.DownArrow:
+                    case ConsoleKey.S: y++;break;
+                    case ConsoleKey.LeftArrow:
+                    case ConsoleKey.A: x-=2;break;
+                    case ConsoleKey.RightArrow:
+                    case ConsoleKey.D: x+=2;break; 
+                    
+                }
+                
+                if (y < 0) y = 1;
+                if(x<0) x=0;               
+                if (y > Console.BufferHeight - 1) y = Console.BufferHeight - 1;
+                if(x>Console.BufferWidth-1) x= Console.BufferWidth - 1;
+                Console.Clear();
+                Console.WriteLine($"X={x}, Y={y}");
+                Console.SetCursorPosition(x,y);
+                Console.Write(symbol);
+                
+
+
+            } while (key!=ConsoleKey.Escape);
+
+            
         }
     }
 }
